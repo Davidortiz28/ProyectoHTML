@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="../CSS/variables.css">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/checkout.css">
+</head>
+<body>
+  <main class="checkout-layout">
+    <header class="checkout-topbar">
+      <a class="icon-btn" href="../index.html" aria-label="Back">Back</a>
+      <h1 class="checkout-title">Checkout</h1>
+      <button class="icon-btn" type="button" aria-label="Menu">|||</button>
+    </header>
+
+    <section class="cart-list" aria-label="Cart items">
+      <input class="qty-state" type="radio" name="item1qty" id="item1q1" checked>
+      <input class="qty-state" type="radio" name="item1qty" id="item1q2">
+      <input class="qty-state" type="radio" name="item1qty" id="item1q3">
+
+      <article class="cart-card">
+        <img src="../storage/img/Estilo_Clasico.png" alt="Classic linen set">
+        <div>
+          <h2>Classic Linen Set</h2>
+          <p>Dresses</p>
+          <p class="item-price">$89.00</p>
+          <div class="qty-control item1" aria-label="Quantity controls">
+            <label class="minus minus-2" for="item1q1">-</label>
+            <label class="minus minus-3" for="item1q2">-</label>
+
+            <span class="qty-view qty-1">1</span>
+            <span class="qty-view qty-2">2</span>
+            <span class="qty-view qty-3">3</span>
+
+            <label class="plus plus-1" for="item1q2">+</label>
+            <label class="plus plus-2" for="item1q3">+</label>
+          </div>
+        </div>
+      </article>
+
+      <input class="qty-state" type="radio" name="item2qty" id="item2q1" checked>
+      <input class="qty-state" type="radio" name="item2qty" id="item2q2">
+      <input class="qty-state" type="radio" name="item2qty" id="item2q3">
+
+      <article class="cart-card">
+        <img src="../storage/img/Estilo_Negro.png" alt="Black street style">
+        <div>
+          <h2>Black Street Style</h2>
+          <p>Jeans</p>
+          <p class="item-price">$96.00</p>
+          <div class="qty-control item2" aria-label="Quantity controls">
+            <label class="minus minus-2" for="item2q1">-</label>
+            <label class="minus minus-3" for="item2q2">-</label>
+
+            <span class="qty-view qty-1">1</span>
+            <span class="qty-view qty-2">2</span>
+            <span class="qty-view qty-3">3</span>
+
+            <label class="plus plus-1" for="item2q2">+</label>
+            <label class="plus plus-2" for="item2q3">+</label>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <input type="radio" name="payment" id="credit" checked>
+    <input type="radio" name="payment" id="debit">
+
+    <section class="checkout-panels">
+      <article class="panel">
+        <h3>Informacion de Envio y Pago</h3>
+        <p class="panel-note">Metodo de pago</p>
+        <div class="payment-options">
+          <label for="credit">Tarjeta de Credito</label>
+          <label for="debit">Tarjeta de Debito</label>
+        </div>
+        <p class="panel-note shipping-label">Direccion de envio</p>
+        <div class="shipping-box">
+          <p>Calle 123 #45-67, Bogota</p>
+          <span>Entrega estimada: 2-4 dias habiles</span>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h3>Resumen de Compra</h3>
+        <p class="summary-line"><span>Total de productos seleccionados</span><span>2 items</span></p>
+        <p class="summary-line"><span>Precio total de productos</span><span>$185.00</span></p>
+        <p class="summary-line"><span>Costo de envio</span><span>$8.00</span></p>
+        <p class="summary-line"><span>Descuentos</span><span>-$12.00</span></p>
+        <p class="summary-line total"><span>Subtotal</span><span>$181.00</span></p>
+        <a class="pay-btn" href="#pay-modal"><img src="../storage/img/Botón_Pago.png" alt="Pagar">Pagar</a>
+      </article>
+    </section>
+  </main>
+
+  <section id="pay-modal" class="modal" aria-label="Payment confirmation modal">
+    <article class="modal-card">
+      <h2>Compra Confirmada</h2>
+      <p>Tu pago fue procesado correctamente y tu pedido esta en preparacion.</p>
+      <a class="modal-close" href="#">Cerrar</a>
+    </article>
+  </section>
+</body>
+</html>
+
+

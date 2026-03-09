@@ -1,0 +1,30 @@
+﻿:root {
+  --font-main: "Encode Sans", "Segoe UI", sans-serif;
+
+  --bg-app: #e8ecf2;
+  --bg-page: #f6f6f6;
+  --surface: #ffffff;
+  --ink: #1d1b21;
+  --muted: #8f8b95;
+  --line: #e9e7eb;
+  --brand: #242127;
+  --brand-contrast: #ffffff;
+  --star: #f4b403;
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 16px 30px rgba(20, 16, 22, 0.08);
+
+  --bp-tablet: 1024px;
+  --bp-mobile: 768px;
+}
+
+@font-face {
+  font-family: "Encode Sans";
+  src: local("Encode Sans");
+  font-style: normal;
+  font-display: swap;
+}

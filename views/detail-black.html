@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle del producto</title>
+  <link rel="stylesheet" href="../CSS/variables.css">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/detail.css">
+</head>
+<body>
+  <main class="detail-layout">
+    <header class="detail-topbar">
+      <a class="round-btn" href="../index.html">Atras</a>
+      <button class="round-btn favorite" type="button" aria-pressed="true">Anadir a favoritos</button>
+    </header>
+
+    <section class="detail-hero">
+      <img src="../storage/img/Estilo_Negro.png" alt="Black street style product image">
+    </section>
+
+    <input type="radio" name="qty" id="qty1" checked>
+    <input type="radio" name="qty" id="qty2">
+    <input type="radio" name="qty" id="qty3">
+    <input type="radio" name="qty" id="qty4">
+
+    <input type="radio" name="size" id="size-s" checked>
+    <input type="radio" name="size" id="size-m">
+    <input type="radio" name="size" id="size-l">
+
+    <input type="radio" name="color" id="color-black" checked>
+    <input type="radio" name="color" id="color-cream">
+    <input type="radio" name="color" id="color-rose">
+
+    <section class="detail-info">
+      <div class="info-head">
+        <h1>Black Street Style</h1>
+      </div>
+
+      <p class="stats">
+        <span>Calificacion: 4.9/5</span>
+        <span>2,430 vistas</span>
+      </p>
+
+      <div class="qty-wrap">
+        <p>Cantidad</p>
+        <div class="qty-options">
+          <label for="qty1">1</label>
+          <label for="qty2">2</label>
+          <label for="qty3">3</label>
+          <label for="qty4">4</label>
+        </div>
+      </div>
+
+      <a class="view-more" href="#description-modal">Ver mas</a>
+
+      <section class="customization">
+        <p>Talla</p>
+        <div class="size-options">
+          <label for="size-s">S</label>
+          <label for="size-m">M</label>
+          <label for="size-l">L</label>
+        </div>
+
+        <p class="color-label">Color</p>
+        <div class="color-options">
+          <label class="color-black" for="color-black" aria-label="Negro"></label>
+          <label class="color-cream" for="color-cream" aria-label="Crema"></label>
+          <label class="color-rose" for="color-rose" aria-label="Rosa"></label>
+        </div>
+      </section>
+
+      <div class="buy-row">
+        <p class="total-price">
+          <span class="price-1">Total: $96.00</span>
+          <span class="price-2">Total: $192.00</span>
+          <span class="price-3">Total: $288.00</span>
+          <span class="price-4">Total: $384.00</span>
+        </p>
+        <a class="buy-btn" href="checkout.html"><img src="../storage/img/Botón_Carro.png" alt="Agregar al carrito">Comprar</a>
+      </div>
+    </section>
+  </main>
+
+  <section id="description-modal" class="modal" aria-label="Modal de descripcion del producto">
+    <article class="modal-card">
+      <h2>Black Street Style</h2>
+      <p>
+        Outfit de denim oscuro con silueta ajustada y textura premium. Disenado para un estilo urbano moderno, con movimiento comodo y acabado minimalista.
+      </p>
+      <a class="close-modal" href="#">Cerrar</a>
+    </article>
+  </section>
+</body>
+</html>
+
+
+
+

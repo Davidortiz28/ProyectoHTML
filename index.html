@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothify Store</title>
+  <link rel="stylesheet" href="CSS/variables.css">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container container">
+      <input type="checkbox" id="nav-toggle">
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul class="menu-items">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Category</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Testimonial</a></li>
+        <li><a href="#contact-modal">Contact</a></li>
+      </ul>
+      <h1 class="logo">Navbar</h1>
+    </div>
+  </nav>
+
+  <main class="container page-shell">
+    <header class="main-header">
+      <div class="user-box">
+        <img class="user-avatar" src="storage/img/Dav.png" alt="User profile photo">
+        <div>
+          <p>¡Hola, Bienvenido de vuelta!</p>
+          <h1>David Fabián</h1>
+        </div>
+      </div>
+    </header>
+
+    <form class="search-wrap" action="#" method="get">
+      <input type="search" name="q" placeholder="Search products..." aria-label="Search products">
+      <button type="submit">Search</button>
+    </form>
+
+    <nav class="category-nav" aria-label="Product categories">
+      <a class="active" href="#">All</a>
+      <a href="#">Dresses</a>
+      <a href="#">T-Shirts</a>
+      <a href="#">Jeans</a>
+      <a href="#">Jackets</a>
+      <a href="#">Shoes</a>
+    </nav>
+
+    <section class="product-grid" aria-label="Product list">
+      <article class="product-card">
+        <div class="product-media">
+          <img src="storage/img/Estilo_Clasico.png" alt="Classic look outfit">
+          <button class="favorite-btn" type="button">Add to Favorites</button>
+        </div>
+        <h2 class="product-title">Classic Linen Set</h2>
+        <p class="product-meta">
+          <span>Dresses</span>
+          <span>4.8/5</span>
+        </p>
+        <p class="product-price">$89.00</p>
+        <div class="card-actions">
+          <a href="views/detail.html">View detail</a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media">
+          <img src="storage/img/Estilo_Gorrito.png" alt="Urban hat outfit">
+          <button class="favorite-btn" type="button">Add to Favorites</button>
+        </div>
+        <h2 class="product-title">Urban Hat Combo</h2>
+        <p class="product-meta">
+          <span>T-Shirts</span>
+          <span>4.7/5</span>
+        </p>
+        <p class="product-price">$72.00</p>
+        <div class="card-actions">
+          <a href="views/detail-urban.html">View detail</a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media">
+          <img src="storage/img/Estilo_Negro.png" alt="Black style outfit">
+          <button class="favorite-btn" type="button">Add to Favorites</button>
+        </div>
+        <h2 class="product-title">Black Street Style</h2>
+        <p class="product-meta">
+          <span>Jeans</span>
+          <span>4.9/5</span>
+        </p>
+        <p class="product-price">$96.00</p>
+        <div class="card-actions">
+          <a href="views/detail-black.html">View detail</a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media">
+          <img src="storage/img/Estilo_Urbano.png" alt="Urban relaxed outfit">
+          <button class="favorite-btn" type="button">Add to Favorites</button>
+        </div>
+        <h2 class="product-title">Relaxed City Fit</h2>
+        <p class="product-meta">
+          <span>Jackets</span>
+          <span>4.6/5</span>
+        </p>
+        <p class="product-price">$78.00</p>
+        <div class="card-actions">
+          <a href="views/detail-relaxed.html">View detail</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a class="active" href="index.html">Home</a>
+    <a href="views/checkout.html">Cart</a>
+    <a href="#">Favorites</a>
+    <a href="#">Profile</a>
+  </nav>
+
+  <section id="contact-modal" class="contact-modal" aria-label="Informacion de contacto">
+    <a class="contact-backdrop" href="#" aria-label="Cerrar"></a>
+    <article class="contact-box">
+      <h2>Contactos</h2>
+      <p>+57 321 201 6511</p>
+      <p>+57 321 201 6511</p>
+      <a class="close-contact" href="#">Cerrar</a>
+    </article>
+  </section>
+</body>
+</html>
