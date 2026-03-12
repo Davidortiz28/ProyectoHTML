@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.propordio{
+    display: flex;
+    height: 20px;
+    
+    width: 12px;
+    gap: 4px
+}
+.my-best-picture{
+
+align-items:center;
+width: 100px;
+right: 100px;
+
+}
+
+.i_dunno{
+    display: flex;
+    border-radius: 20px solid #434343;
+    
+
+
+
+}
